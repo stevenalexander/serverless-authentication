@@ -66,6 +66,12 @@ npx aws-api-gateway-cli-test \
 
 The Lambda will have access to the details of the cognito user in the `event.requestContext.identity` object.
 
+## Cleanup AWS resources
+
+```
+serverless remove -v
+```
+
 ## Notes
 
 This PoC uses the basic API Gateway Cognito User Pool Authorizer, see [here](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-to-api.html) for alternatives.
